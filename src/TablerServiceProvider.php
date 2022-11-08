@@ -1,6 +1,6 @@
 <?php
 
-namespace Tabler\Kometsoft;
+namespace Kometsoft\Tabler;
 
 use Illuminate\Support\ServiceProvider;
 
