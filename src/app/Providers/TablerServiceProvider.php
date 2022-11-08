@@ -1,6 +1,6 @@
 <?php
 
-namespace Tabler\App\Providers;
+namespace Tabler\Src\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

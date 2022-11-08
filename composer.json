@@ -7,5 +7,17 @@
       "email": "0x0976@gmail.com"
     }
   ],
+  "autoload": {
+    "classmap": [
+      "/"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tabler\\Src\\App\\Providers\\AppServiceProvider"
+      ]
+    }
+  },
   "require": {}
 }
