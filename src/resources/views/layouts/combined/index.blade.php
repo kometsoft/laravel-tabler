@@ -1,7 +1,6 @@
 <!doctype html>
 <!--
 * @version 1.0.0-beta14
-* @link https://tabler.io
 -->
 <html lang="en">
 
