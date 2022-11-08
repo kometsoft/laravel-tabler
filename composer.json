@@ -18,7 +18,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Tabler\\TablerServiceProvider"
+        "Kometsoft\\Tabler\\TablerServiceProvider"
       ]
     }
   },
