@@ -1,0 +1,11 @@
+{
+  "name": "kometsoft/tabler",
+  "description": "A premium and open source dashboard template with a responsive and high-quality UI.",
+  "authors": [
+    {
+      "name": "aerrata",
+      "email": "0x0976@gmail.com"
+    }
+  ],
+  "require": {}
+}
