@@ -208,8 +208,8 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <a href="{{ route('tabler.profile.index') }}" class="dropdown-item">@lang('Profile')</a>
-                    <div class="dropdown-divider"></div>
+                    {{-- <a href="{{ route('tabler.profile.index') }}" class="dropdown-item">@lang('Profile')</a>
+                    <div class="dropdown-divider"></div> --}}
                     <a href="{{ route('logout') }}" class="dropdown-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         @lang('Log Out')
