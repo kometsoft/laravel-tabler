@@ -1,0 +1,32 @@
+{
+  "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.eot": {
+    "file": "assets/tabler-icons.eot",
+    "src": "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.eot"
+  },
+  "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.woff2": {
+    "file": "assets/tabler-icons.woff2",
+    "src": "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.woff2"
+  },
+  "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.svg": {
+    "file": "assets/tabler-icons.svg",
+    "src": "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.svg"
+  },
+  "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.woff": {
+    "file": "assets/tabler-icons.woff",
+    "src": "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.woff"
+  },
+  "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.ttf": {
+    "file": "assets/tabler-icons.ttf",
+    "src": "node_modules/@tabler/icons/iconfont/fonts/tabler-icons.ttf"
+  },
+  "resources/js/tabler.js": {
+    "file": "assets/tabler2.js",
+    "src": "resources/js/tabler.js",
+    "isEntry": true
+  },
+  "resources/sass/tabler.scss": {
+    "file": "assets/tabler.css",
+    "src": "resources/sass/tabler.scss",
+    "isEntry": true
+  }
+}
