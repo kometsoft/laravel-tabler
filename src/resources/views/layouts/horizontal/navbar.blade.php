@@ -10,7 +10,7 @@
                     {{-- Dropdown menu --}}
                     <li @class(['active'=> (strpos(Route::currentRouteName(), $link['active']) === 0), 'nav-item
                         dropdown'])>
-                        <a href="{{ route($link['route_name']) }}" class="nav-link dropdown-toggle"
+                        <a href="{{ $link['url'] }}" class="nav-link dropdown-toggle"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-{{ $link['icon'] }} icon"></i>
@@ -23,12 +23,14 @@
                             <div class="dropdown-menu-columns">
                                 <div class="dropdown-menu-column">
                                     @foreach ($link['children'] as $child)
-                                    <a class="dropdown-item" href="{{ route($child['route_name']) }}">
+                                    @if (isset($child['enabled']) && $child['enabled'])
+                                    <a class="dropdown-item" href="{{ $child['url'] }}">
                                         <div class="nav-link-icon d-md-none d-lg-inline-block">
                                             <i class="ti ti-{{ $child['icon'] }} icon"></i>
                                         </div>
                                         @lang($child['name'])
                                     </a>
+                                    @endif
                                     @endforeach
                                 </div>
                             </div>
@@ -37,7 +39,7 @@
                     @else
                     {{-- Single menu --}}
                     <li @class(['active'=> (strpos(Route::currentRouteName(), $link['active']) === 0), 'nav-item'])>
-                        <a href="{{ route($link['route_name']) }}" class="nav-link">
+                        <a href="{{ $link['url'] }}" class="nav-link">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-{{ $link['icon'] }} icon"></i>
                             </span>

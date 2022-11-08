@@ -10,35 +10,24 @@ return [
         [
             'name' => 'Dashboard',
             'icon' => 'home',
-            'route_name' => 'home',
+            'url' => '/home',
             'active' => 'home',
             'enabled' => true,
         ],
         [
-            'name' => 'Administration',
+            'name' => 'Item',
             'icon' => 'adjustments',
-            'route_name' => 'home',
-            'active' => 'tabler.admin',
+            'url' => '/item',
+            'active' => 'item',
             'enabled' => true,
             'children' => [
                 [
-                    'name' => 'Users',
+                    'name' => 'Sub item',
                     'icon' => 'users',
-                    'route_name' => 'tabler.admin.user.index',
-                    'active' => 'tabler.admin.user',
+                    'url' => '/item/sub',
+                    'active' => 'item',
+                    'enabled' => true,
                 ],
-                [
-                    'name' => 'Access Control',
-                    'icon' => 'lock',
-                    'route_name' => 'tabler.admin.role.index',
-                    'active' => 'tabler.admin.role',
-                ],
-                [
-                    'name' => 'Activity Logs',
-                    'icon' => 'sock',
-                    'route_name' => 'tabler.admin.activity.index',
-                    'active' => 'tabler.admin.activity',
-                ]
             ]
         ],
     ],
