@@ -4,7 +4,7 @@ namespace Tabler\Src\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class TablerServiceProvider extends ServiceProvider
+class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
