@@ -22,7 +22,7 @@
     <x-tabler::datatable-assets></x-tabler::datatable-assets>
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @stack('style')
 </head>
 

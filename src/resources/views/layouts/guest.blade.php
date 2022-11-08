@@ -15,7 +15,7 @@
 	<script type="module" src="{{ asset('vendor/tabler/assets/tabler2.js') }}"></script>
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @stack('style')
 </head>
 
