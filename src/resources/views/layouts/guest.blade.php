@@ -20,7 +20,6 @@
 </head>
 
 <body>
-    hahah
     <!-- Toasts -->
 	<x-tabler::toast-group></x-tabler::toast-group>
 
