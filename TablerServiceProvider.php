@@ -37,7 +37,7 @@ class TablerServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__ . '/src/stubs/resources/views' => resource_path('views'),
+            __DIR__ . '/stubs/resources/views' => resource_path('views'),
         ]);
     }
 }
