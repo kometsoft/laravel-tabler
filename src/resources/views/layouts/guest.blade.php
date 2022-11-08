@@ -23,8 +23,15 @@
     <!-- Toasts -->
 	<x-tabler::toast-group></x-tabler::toast-group>
 
-    <div class="page page-center">
-        @yield('content')
+    <!-- Header -->
+    @include('tabler::layouts.horizontal.header')
+
+    <div class="page-wrapper">
+        <div class="page-body pt-4">
+            <div class="container-xl">
+                @yield('content')
+            </div>
+        </div>
     </div>
     @stack('script')
 </body>
