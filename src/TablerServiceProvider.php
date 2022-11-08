@@ -14,7 +14,7 @@ class TablerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/src/config/tabler.php',
+            __DIR__ . '/config/tabler.php',
             'tabler'
         );
     }
@@ -26,14 +26,14 @@ class TablerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/src/resources/views', 'tabler');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
 
         $this->publishes([
-            __DIR__ . '/src/config/tabler.php' => config_path('tabler.php'),
+            __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
         ]);
 
         $this->publishes([
-            __DIR__ . '/src/public/vendor' => public_path('vendor'),
+            __DIR__ . '/public/vendor' => public_path('vendor'),
         ]);
 
         $this->publishes([
