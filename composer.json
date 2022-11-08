@@ -15,7 +15,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Tabler\\AppServiceProvider"
+        "Tabler\\TablerServiceProvider"
       ]
     }
   },
