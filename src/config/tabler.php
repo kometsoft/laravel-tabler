@@ -2,7 +2,13 @@
 
 return [
 
-    'layout' => 'tabler::layouts.horizontal.index',
+    'layout' => [
+        
+        'app' => 'tabler::layouts.horizontal.index',
+
+        'guest' => 'tabler::layouts.guest'
+    
+    ],
 
     'logo_path' => false,
 

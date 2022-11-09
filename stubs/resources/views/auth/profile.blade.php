@@ -1,4 +1,4 @@
-@extends(config('tabler.layout'))
+@extends(config('tabler.layout.app'))
 
 @section('header')
 <x-tabler::page-header title="Profile"></x-tabler::page-header>

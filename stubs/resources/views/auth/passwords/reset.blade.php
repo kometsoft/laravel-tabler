@@ -1,4 +1,4 @@
-@extends('tabler::layouts.guest')
+@extends(config('tabler.layout.guest'))
 
 @section('content')
 <div class="container">
