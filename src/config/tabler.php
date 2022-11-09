@@ -3,35 +3,30 @@
 return [
 
     'layout' => [
-        
         'app' => 'tabler::layouts.horizontal.index',
-
         'guest' => 'tabler::layouts.guest'
-    
     ],
-
     'logo_path' => false,
-
     'navbar_links' => [
         [
             'name' => 'Dashboard',
             'icon' => 'home',
             'url' => '/home',
-            'active' => 'home',
+            'active' => request()->routeIs('home'),
             'enabled' => true,
         ],
         [
             'name' => 'Item',
             'icon' => 'adjustments',
             'url' => '/item',
-            'active' => 'item',
+            'active' => false,
             'enabled' => true,
             'children' => [
                 [
                     'name' => 'Sub item',
-                    'icon' => 'users',
+                    'icon' => 'adjustments',
                     'url' => '/item/sub',
-                    'active' => 'item',
+                    'active' => false,
                     'enabled' => true,
                 ],
             ]

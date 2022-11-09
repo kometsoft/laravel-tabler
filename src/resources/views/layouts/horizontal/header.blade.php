@@ -201,7 +201,7 @@
                 <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
                     aria-label="Open user menu">
                     <span class="avatar avatar-sm"
-                        style="background-image: url('{{ auth()->user()->photo_url }}')"></span>
+                        style="background-image: url('https://source.boringavatars.com/marble/120/{{ auth()->user()->id }}?square&colors=264653,2a9d8f,e9c46a,f4a261,e76f51')"></span>
                     <div class="d-none d-md-block ps-2">
                         <div>{{ auth()->user()->name }}</div>
                         <div class="mt-1 text-muted">{{ auth()->user()->email }}</div>
