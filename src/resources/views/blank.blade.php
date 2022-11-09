@@ -5,7 +5,7 @@
     <div class="btn-list">
         <x-tabler::button href="#" class="btn btn-primary" icon="plus" label="Create"></x-tabler::button>
     </div>
-</x-page-header>
+</x-tabler::page-header>
 @endsection
 
 @section('content')
