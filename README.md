@@ -18,7 +18,7 @@ composer require kometsoft/laravel-tabler
 
 ```
 php artisan ui bootstrap --auth
-php artisan vendor:publish --force
+php artisan vendor:publish --tag=laravel-tabler --force
 ```
 
 #### Install npm dependencies
