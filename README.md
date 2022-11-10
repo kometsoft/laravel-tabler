@@ -11,7 +11,7 @@
 After a fresh laravel installation, run;
 
 ```
-composer require kometsoft/tabler
+composer require kometsoft/laravel-tabler
 ```
 
 #### Publish package files
