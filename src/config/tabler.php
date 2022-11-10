@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'lang' => 'en',
     'layout' => [
         'app' => 'tabler::layouts.horizontal.index',
         'guest' => 'tabler::layouts.guest'
