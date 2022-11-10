@@ -11,7 +11,7 @@ laravel/ui (^4.0")
 
 #### Install npm dependencies
 
-After a fresg laravel installation, run;
+After a fresh laravel installation, run;
 
 ```
 composer require kometsoft/tabler
