@@ -22,7 +22,6 @@ composer require kometsoft/tabler
 ```
 php artisan ui bootstrap --auth
 php artisan vendor:publish --force
-
 ```
 
 #### Install npm dependencies
