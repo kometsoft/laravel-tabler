@@ -1,13 +1,10 @@
 # Laravel Tabler
 
-### Dependencies
+## Requirements 
+- php 8.0
+- laravel/ui 4.0
 
-```
-php (>=8.0)
-laravel/ui (^4.0")
-```
-
-### Installations
+## Installations
 
 #### Install npm dependencies
 
