@@ -34,13 +34,10 @@ class TablerServiceProvider extends ServiceProvider
         ]);
 
         $this->publishes([
-            __DIR__ . '/src/public/vendor' => public_path('vendor'),
-        ]);
-
-        $this->publishes([
             __DIR__ . '/stubs/resources/sass' => resource_path('sass'),
             __DIR__ . '/stubs/resources/js' => resource_path('js'),
-            __DIR__ . '/stubs/vite.config.js' => base_path('vite.config.js')
+            __DIR__ . '/stubs/vite.config.js' => base_path('vite.config.js'),
+            __DIR__ . '/stubs/public/vendor' => public_path('vendor'),
         ]);
 
         $this->publishes([
