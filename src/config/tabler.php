@@ -18,14 +18,14 @@ return [
         [
             'name' => 'Item',
             'icon' => 'adjustments',
-            'url' => '/item',
+            'url' => '#',
             'active' => false,
             'enabled' => true,
             'children' => [
                 [
                     'name' => 'Sub item',
                     'icon' => 'adjustments',
-                    'url' => '/item/sub',
+                    'url' => '#',
                     'active' => false,
                     'enabled' => true,
                 ],

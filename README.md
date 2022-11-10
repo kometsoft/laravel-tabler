@@ -1,1 +1,1 @@
-npm install nouislider litepicker tom-select @tabler/core
+npm install nouislider litepicker tom-select alpinejs autosize imask @tabler/core

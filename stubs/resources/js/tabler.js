@@ -14,9 +14,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 // import $ from 'jquery'
 // window.$ = $
 
-// import Alpine from 'alpinejs'
-// window.Alpine = Alpine
-// Alpine.start()
+import Alpine from 'alpinejs'
+window.Alpine = Alpine
+Alpine.start()
 
 import '@tabler/core/src/js/tabler'
 import '@tabler/core/src/js/demo'
