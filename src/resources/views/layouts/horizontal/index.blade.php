@@ -7,21 +7,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>{{ config('app.name', 'Laravel') }} @hasSection('title') - @yield('title') @endif</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Tabler Theme -->
-    <link rel="stylesheet" href="{{ asset('vendor/tabler/assets/tabler.css') }}">
-    <script type="module" src="{{ asset('vendor/tabler/assets/tabler2.js') }}"></script>
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     <!-- Datatable -->
     <x-tabler::datatable-assets></x-tabler::datatable-assets>
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @stack('style')
 </head>
 

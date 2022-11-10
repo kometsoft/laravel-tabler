@@ -12,7 +12,7 @@ return [
             'name' => 'Dashboard',
             'icon' => 'home',
             'url' => '/home',
-            'active' => request()->routeIs('home'),
+            'active' => true, // request()->routeIs('home')
             'enabled' => true,
         ],
         [
