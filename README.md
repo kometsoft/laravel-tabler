@@ -1,0 +1,1 @@
+npm install nouislider litepicker tom-select @tabler/core

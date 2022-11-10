@@ -26,6 +26,7 @@ class TablerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Clean up dir before copy 
         $this->loadViewsFrom(__DIR__ . '/src/resources/views', 'tabler');
 
         $this->publishes([
@@ -38,7 +39,8 @@ class TablerServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/stubs/resources/sass' => resource_path('sass'),
-            __DIR__ . '/stubs/resources/js' => resource_path('js')
+            __DIR__ . '/stubs/resources/js' => resource_path('js'),
+            __DIR__ . '/stubs/vite.config.js' => base_path()
         ]);
 
         $this->publishes([
