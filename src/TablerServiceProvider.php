@@ -26,8 +26,9 @@ class TablerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Clean up dir before copy 
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
+
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'tabler');
 
         $this->publishes([
             // Config file
