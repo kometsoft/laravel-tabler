@@ -14,7 +14,7 @@ class TablerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/src/config/tabler.php',
+            __DIR__ . '/config/tabler.php',
             'tabler'
         );
     }
@@ -27,20 +27,20 @@ class TablerServiceProvider extends ServiceProvider
     public function boot()
     {
         // Clean up dir before copy 
-        $this->loadViewsFrom(__DIR__ . '/src/resources/views', 'tabler');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
 
         $this->publishes([
             // Config file
-            __DIR__ . '/src/config/tabler.php' => config_path('tabler.php'),
+            __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
 
             // Assets
-            __DIR__ . '/stubs/resources/sass' => resource_path('sass'),
-            __DIR__ . '/stubs/resources/js' => resource_path('js'),
-            __DIR__ . '/stubs/vite.config.js' => base_path('vite.config.js'),
-            __DIR__ . '/stubs/public/vendor' => public_path('vendor'),
+            __DIR__ . '/../resources/sass' => resource_path('sass'),
+            __DIR__ . '/../resources/js' => resource_path('js'),
+            __DIR__ . '/../vite.config.js' => base_path('vite.config.js'),
+            __DIR__ . '/../public/vendor' => public_path('vendor'),
 
             // Stubs
-            __DIR__ . '/stubs/resources/views' => resource_path('views'),
+            __DIR__ . '/../resources/views' => resource_path('views'),
         ], 'laravel-tabler');
     }
 }
