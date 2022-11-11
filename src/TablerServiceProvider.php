@@ -34,13 +34,13 @@ class TablerServiceProvider extends ServiceProvider
             __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
 
             // Assets
-            __DIR__ . '/../resources/sass' => resource_path('sass'),
-            __DIR__ . '/../resources/js' => resource_path('js'),
-            __DIR__ . '/../vite.config.js' => base_path('vite.config.js'),
-            __DIR__ . '/../public/vendor' => public_path('vendor'),
+            __DIR__ . '/../stubs/resources/sass' => resource_path('sass'),
+            __DIR__ . '/../stubs/resources/js' => resource_path('js'),
+            __DIR__ . '/../stubs/vite.config.js' => base_path('vite.config.js'),
+            __DIR__ . '/../stubs/public/vendor' => public_path('vendor'),
 
             // Stubs
-            __DIR__ . '/../resources/views' => resource_path('views'),
+            __DIR__ . '/../stubs/resources/views' => resource_path('views'),
         ], 'laravel-tabler');
     }
 }
