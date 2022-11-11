@@ -1,12 +1,11 @@
 <?php
 
 return [
-    'lang' => 'en',
+    'logo_path' => false,
     'layout' => [
         'app' => 'tabler::layouts.horizontal.index',
         'guest' => 'tabler::layouts.guest'
     ],
-    'logo_path' => false,
     'navbar_links' => [
         [
             'name' => 'Dashboard',
