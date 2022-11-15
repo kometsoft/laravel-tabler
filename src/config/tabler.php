@@ -11,21 +11,21 @@ return [
             'name' => 'Dashboard',
             'icon' => 'home',
             'url' => '/home',
-            'active' => true, // request()->routeIs('home')
+            'active' => 'home', // request()->routeIs('home')
             'enabled' => true,
         ],
         [
             'name' => 'Item',
             'icon' => 'adjustments',
             'url' => '#',
-            'active' => false,
+            'active' => '',
             'enabled' => true,
             'children' => [
                 [
                     'name' => 'Sub item',
                     'icon' => 'adjustments',
                     'url' => '#',
-                    'active' => false,
+                    'active' => '',
                     'enabled' => true,
                 ],
             ]

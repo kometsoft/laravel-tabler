@@ -8,7 +8,7 @@
                     @if (isset($link['enabled']) && $link['enabled'])
                     @if (isset($link['children']))
                     {{-- Dropdown menu --}}
-                    <li @class(['active'=> $link['active'], 'nav-item dropdown'])>
+                    <li @class(['active'=> request()->routeIs($link['active']), 'nav-item dropdown'])>
                         <a href="{{ $link['url'] }}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -37,7 +37,7 @@
                     </li>
                     @else
                     {{-- Single menu --}}
-                    <li @class(['active'=> $link['active'], 'nav-item'])>
+                    <li @class(['active'=> request()->routeIs($link['active']), 'nav-item'])>
                         <a href="{{ $link['url'] }}" class="nav-link">
                             <span class="nav-link-icon d-md-none d-lg-inline-block">
                                 <i class="ti ti-{{ $link['icon'] }} icon"></i>
