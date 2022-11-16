@@ -16,7 +16,7 @@
 
 <x-tabler::card title="Untitled">
     <x-slot:actions>
-        <x-tabler::button type="submit" form="form" class="btn btn-primary" icon="check" label="Save">
+        <x-tabler::button type="submit" form="form" class="btn btn-primary" icon="check" :label="__('Save')">
         </x-tabler::button>
     </x-slot:actions>
 

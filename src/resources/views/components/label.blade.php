@@ -1,7 +1,7 @@
 @props(['label' => null])
 
 <label {!! $attributes->merge(['class' => 'form-label']) !!}>
-    {{ $label ? __($label) : $slot }}
+    {{ $label ? $label : $slot }}
 </label>
 
 

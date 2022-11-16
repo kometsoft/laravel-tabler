@@ -3,7 +3,7 @@
 @section('header')
 <x-tabler::page-header title="Untitled">
     <div class="btn-list">
-        <x-tabler::button href="#" class="btn btn-primary" icon="plus" label="Create"></x-tabler::button>
+        <x-tabler::button href="#" class="btn btn-primary" icon="plus" :label="__('Create')"></x-tabler::button>
     </div>
 </x-tabler::page-header>
 @endsection
