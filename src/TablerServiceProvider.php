@@ -28,8 +28,6 @@ class TablerServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
 
-        $this->loadTranslationsFrom(__DIR__ . '/lang', 'tabler');
-
         $this->publishes([
             // Config file
             __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
@@ -42,7 +40,7 @@ class TablerServiceProvider extends ServiceProvider
 
             // Stubs
             __DIR__ . '/../stubs/resources/views' => resource_path('views'),
-            __DIR__ . '/lang' => lang_path('vendor/tabler'),
+            __DIR__ . '/../stubs/lang' => lang_path(),
         ], 'laravel-tabler');
     }
 }
