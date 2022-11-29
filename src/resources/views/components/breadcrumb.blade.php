@@ -10,7 +10,11 @@
         @foreach($links as $link)
         @if(! empty($link))
         <li class="breadcrumb-item">
-            <a href="{{ @$link['route'] }}">{{ @$link['name'] }}</a>
+            @if (data_get($link, 'route'))
+                <a href="{{ data_get($link, 'route') }}">{{ data_get($link, 'name') }}</a>
+            @else
+                <span class="text-muted">{{ data_get($link, 'name') }}</span>
+            @endif
         </li>
         @endif
         @endforeach
