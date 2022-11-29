@@ -1,4 +1,4 @@
-@props(['title' => 'Untitled', 'links' => []])
+@props(['title' => 'Untitled', 'links' => [], 'show_home' => true])
 
 @section('title', __($title))
 
@@ -8,7 +8,7 @@
         <div class="row g-2 align-items-center mw-100">
             <div class="col">
                 <div class="mb-1">
-                    <x-tabler::breadcrumb :links="$links"></x-tabler::breadcrumb>
+                    <x-tabler::breadcrumb :show_home="$show_home" :links="$links"></x-tabler::breadcrumb>
                 </div>
                 <h2 class="page-title">
                     <span class="text-truncate">@lang($title)</span>
