@@ -1,8 +1,8 @@
-@props(['links' => []])
+@props(['links' => [], 'show_home' => true])
 
 <nav {!! $attributes->merge(['class' => '']) !!}>
     <ol class="breadcrumb">
-        @if(Route::currentRouteName() !== 'home')
+        @if(Route::currentRouteName() !== 'home' && $show_home)
         <li class="breadcrumb-item">
             <a href="{{ route('home') }}">@lang('Dashboard')</a>
         </li>
@@ -10,7 +10,11 @@
         @foreach($links as $link)
         @if(! empty($link))
         <li class="breadcrumb-item">
-            <a href="{{ @$link['route'] }}">{{ @$link['name'] }}</a>
+            @if (data_get($link, 'route'))
+                <a href="{{ data_get($link, 'route') }}">{{ __(data_get($link, 'name')) }}</a>
+            @else
+                <span class="text-muted">{{ __(data_get($link, 'name')) }}</span>
+            @endif
         </li>
         @endif
         @endforeach
