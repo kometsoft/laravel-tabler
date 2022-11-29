@@ -10,10 +10,13 @@
         @foreach($links as $link)
         @if(! empty($link))
         <li class="breadcrumb-item">
+            @php
+                $icon = (data_get($link, 'icon')) ? '<i class="pe-1 ' . data_get($link, 'icon') . '"></i>' : '';
+            @endphp
             @if (data_get($link, 'route'))
-                <a href="{{ data_get($link, 'route') }}">{{ __(data_get($link, 'name')) }}</a>
+                <a href="{{ data_get($link, 'route') }}">{!! $icon !!}{{ __(data_get($link, 'name')) }}</a>
             @else
-                <span class="text-muted">{{ __(data_get($link, 'name')) }}</span>
+                <span class="text-muted">{!! $icon !!}{{ __(data_get($link, 'name')) }}</span>
             @endif
         </li>
         @endif
