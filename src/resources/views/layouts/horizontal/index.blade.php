@@ -1,7 +1,5 @@
 <!doctype html>
-<!--
-* @version 1.0.0-beta14
--->
+{{-- @version 1.0.0-beta14 --}}
 <html lang="en">
 
 <head>
@@ -10,32 +8,29 @@
 
     <title>{{ config('app.name', 'Laravel') }} @hasSection('title') - @yield('title') @endif</title>
 
-    <!-- CSRF Token -->
+    {{-- CSRF Token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
-    <!-- Datatable -->
-    <x-tabler::datatable-assets></x-tabler::datatable-assets>
+    {{-- Scripts --}}
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/tabler/app.js', 'resources/js/datatables/app.js'])
 
     @stack('style')
 </head>
 
 <body>
-	<!-- Toasts -->
+	{{-- Toasts --}}
 	<x-tabler::toast-group></x-tabler::toast-group>
     
     <div class="page">
-        <!-- Header -->
+        {{-- Header --}}
         @include('tabler::layouts.horizontal.header')
 
-        <!-- Navbar -->
+        {{-- Navbar --}}
         @include('tabler::layouts.horizontal.navbar')
 
-        <!-- Contents -->
+        {{-- Contents --}}
         <div class="page-wrapper">
-            <!-- Page header -->
+            {{-- Page header --}}
             @yield('header')
             
             <div class="page-body">

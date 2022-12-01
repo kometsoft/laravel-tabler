@@ -24,11 +24,11 @@ php artisan vendor:publish --tag=laravel-tabler --force
 #### Install npm dependencies
 
 ```
-npm install nouislider litepicker tom-select alpinejs autosize imask @tabler/core
+npm install nouislider litepicker tom-select alpinejs autosize imask @tabler/core laravel-datatables-vite
 ```
 
 #### Compile npm assets
 
 ```
-npm install && npm run build
+npm run build
 ```
