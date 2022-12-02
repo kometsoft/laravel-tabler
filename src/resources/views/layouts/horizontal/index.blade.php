@@ -12,7 +12,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- Scripts --}}
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/tabler/app.js', 'resources/js/datatables/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/tabler/app.js'])
 
     @stack('style')
 </head>
@@ -30,6 +30,7 @@
 
         {{-- Contents --}}
         <div class="page-wrapper">
+            
             {{-- Page header --}}
             @yield('header')
             
