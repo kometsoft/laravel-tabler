@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'logo_path' => false,
+    'logo_path' => 'https://preview.tabler.io/static/logo.svg',
     'layout' => [
         'app' => 'tabler::layouts.horizontal.index',
         'guest' => 'tabler::layouts.guest'
