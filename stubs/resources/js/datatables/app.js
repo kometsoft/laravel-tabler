@@ -21,7 +21,7 @@ $.extend(true, DataTable.defaults, {
           <"row d-flex align-items-center"
             <"col-sm-12 col-lg-4 text-muted"i>
             <"col-sm-12 col-lg-4 text-muted mt-3 mt-lg-0 d-flex justify-content-center"l>
-            <"col-sm-12 col-lg-4 mt-2 mt-lg-0"p>
+            <"col-sm-12 col-lg-4 mt-3 mt-lg-0"p>
           >
         >`,
   autoWidth: false,
