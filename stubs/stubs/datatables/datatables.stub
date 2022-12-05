@@ -1,0 +1,86 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyModel;
+use Yajra\DataTables\Html\Button;
+use Yajra\DataTables\Html\Column;
+use Yajra\DataTables\Services\DataTable;
+use Yajra\DataTables\Html\Editor\Fields;
+use Yajra\DataTables\Html\Editor\Editor;
+use Illuminate\Database\Eloquent\Builder as QueryBuilder;
+use Yajra\DataTables\EloquentDataTable;
+use Yajra\DataTables\Html\Builder as HtmlBuilder;
+
+class DummyClass extends DataTable
+{
+    /**
+     * Build DataTable class.
+     *
+     * @param QueryBuilder $query Results from query() method.
+     * @return \Yajra\DataTables\EloquentDataTable
+     */
+    public function dataTable(QueryBuilder $query): EloquentDataTable
+    {
+        return (new EloquentDataTable($query))
+            ->addColumn('action', 'DummyAction')
+            ->setRowId('id');
+    }
+
+    /**
+     * Get query source of dataTable.
+     *
+     * @param \DummyModel $model
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function query(ModelName $model): QueryBuilder
+    {
+        return $model->newQuery();
+    }
+
+    /**
+     * Optional method if you want to use html builder.
+     *
+     * @return \Yajra\DataTables\Html\Builder
+     */
+    public function html(): HtmlBuilder
+    {
+        return $this->builder()
+                    ->setTableId('DummyTableId')
+                    ->columns($this->getColumns())
+                    ->minifiedAjax()
+                    //->dom('DummyDOM')
+                    ->orderBy(1)
+                    ->selectStyleSingle()
+                    ->buttons([
+                        DummyButtons
+                    ]);
+    }
+
+    /**
+     * Get the dataTable columns definition.
+     *
+     * @return array
+     */
+    public function getColumns(): array
+    {
+        return [
+            Column::computed('action')
+                  ->exportable(false)
+                  ->printable(false)
+                  ->width(60)
+                  ->addClass('text-center'),
+            DummyColumns
+        ];
+    }
+
+    /**
+     * Get filename for export.
+     *
+     * @return string
+     */
+    protected function filename(): string
+    {
+        return 'DummyFilename_' . date('YmdHis');
+    }
+}

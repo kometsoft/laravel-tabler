@@ -41,6 +41,7 @@ class TablerServiceProvider extends ServiceProvider
             // Stubs
             __DIR__ . '/../stubs/resources/views' => resource_path('views'),
             __DIR__ . '/../stubs/lang' => lang_path(),
+            __DIR__ . '/../stubs/stubs' => base_path('stubs'),
         ], 'laravel-tabler');
     }
 }
