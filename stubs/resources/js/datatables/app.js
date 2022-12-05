@@ -24,6 +24,7 @@ $.extend(true, DataTable.defaults, {
             <"col-sm-12 col-lg-4 mt-2 mt-lg-0"p>
           >
         >`,
+  autoWidth: false,
   language: {
     paginate: {
       first: '<i class="ti ti-chevrons-left "></i>',
