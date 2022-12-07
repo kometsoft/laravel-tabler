@@ -23,7 +23,17 @@ class DummyClass extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'DummyAction')
+            ->addColumn('action', function ($model) {
+                return view('components.datatable-actions', [
+                    'id' => 'DummyTableId',
+                    'route' => [
+                        'show' => route('home'),
+                        'edit' => route('home'),
+                        'destroy' => route('home')
+                    ]
+                ])->toHtml();
+            })
+            ->rawColumns(['action'])
             ->setRowId('id');
     }
 
@@ -49,7 +59,6 @@ class DummyClass extends DataTable
                     ->setTableId('DummyTableId')
                     ->columns($this->getColumns())
                     ->minifiedAjax()
-                    //->dom('DummyDOM')
                     ->orderBy(1)
                     ->selectStyleSingle()
                     ->buttons([
@@ -67,9 +76,7 @@ class DummyClass extends DataTable
         return [
             Column::computed('action')
                   ->exportable(false)
-                  ->printable(false)
-                  ->width(60)
-                  ->addClass('text-center'),
+                  ->printable(false),
             DummyColumns
         ];
     }
