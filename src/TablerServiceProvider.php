@@ -26,7 +26,7 @@ class TablerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'laravel-tabler');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
 
         $this->publishes([
             // Config file
