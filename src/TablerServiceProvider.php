@@ -3,6 +3,7 @@
 namespace Kometsoft\Tabler;
 
 use Illuminate\Support\ServiceProvider;
+use App\Console\Commands\InstallCommand;
 
 class TablerServiceProvider extends ServiceProvider
 {
@@ -43,5 +44,11 @@ class TablerServiceProvider extends ServiceProvider
             __DIR__ . '/../stubs/lang' => lang_path(),
             __DIR__ . '/../stubs/stubs' => base_path('stubs'),
         ], 'laravel-tabler');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallCommand::class,
+            ]);
+        }
     }
 }
