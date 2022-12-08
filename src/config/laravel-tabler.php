@@ -4,7 +4,12 @@ return [
     'logo_path' => 'https://preview.tabler.io/static/logo.svg',
     'layout' => [
         'app' => 'tabler::layouts.horizontal.index',
-        'guest' => 'tabler::layouts.guest'
+        'guest' => 'tabler::layouts.guest',
+        'includes' => [
+            'header' => 'tabler::layouts.horizontal.header',
+            'navbar' => 'tabler::layouts.horizontal.navbar',
+            'footer' => 'tabler::layouts.horizontal.footer',
+        ]
     ],
     'navbar_links' => [
         [

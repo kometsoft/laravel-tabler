@@ -23,10 +23,10 @@
     
     <div class="page">
         {{-- Header --}}
-        @include('tabler::layouts.horizontal.header')
+        @include(config('tabler.layout.includes.header'))
 
         {{-- Navbar --}}
-        @include('tabler::layouts.horizontal.navbar')
+        @include(config('tabler.layout.includes.navbar'))
 
         {{-- Contents --}}
         <div class="page-wrapper">
@@ -39,7 +39,7 @@
                     @yield('content')
                 </div>
             </div>
-            @include('tabler::layouts.horizontal.footer')
+            @include(config('tabler.layout.includes.footer'))
         </div>
     </div>
 	@stack('script')
