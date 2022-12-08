@@ -21,7 +21,7 @@
     <x-tabler::toast-group></x-tabler::toast-group>
 
     <!-- Header -->
-    @include(config('tabler.layout.includes.header'))
+    @include('layouts._header')
 
     <div class="page-wrapper">
         <div class="page-body pt-4">
