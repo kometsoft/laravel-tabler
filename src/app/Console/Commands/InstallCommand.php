@@ -2,7 +2,9 @@
 
 namespace App\Console\Commands;
 
+use RuntimeException;
 use Illuminate\Console\Command;
+use Symfony\Component\Process\Process;
 
 class InstallCommand extends Command
 {
@@ -18,7 +20,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Install the tabler resources.';
 
     /**
      * Execute the console command.
@@ -27,6 +29,35 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        return Command::SUCCESS;
+        $this->runCommands(['php artisan ui bootstrap --auth']);
+
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-config', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-assets', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-stubs', '--force' => true]);
+
+        $this->runCommands([
+            'npm install @tabler/core laravel-datatables-vite nouislider litepicker tom-select alpinejs autosize imask',
+            'npm run build',
+        ]);
+        
+        $this->line('');
+        $this->components->info('Tabler scaffolding installed successfully.');
+    }
+
+    protected function runCommands($commands)
+    {
+        $process = Process::fromShellCommandline(implode(' && ', $commands), null, null, null, null);
+
+        if ('\\' !== DIRECTORY_SEPARATOR && file_exists('/dev/tty') && is_readable('/dev/tty')) {
+            try {
+                $process->setTty(true);
+            } catch (RuntimeException $e) {
+                $this->output->writeln('  <bg=yellow;fg=black> WARN </> '.$e->getMessage().PHP_EOL);
+            }
+        }
+
+        $process->run(function ($type, $line) {
+            $this->output->write('    '.$line);
+        });
     }
 }
