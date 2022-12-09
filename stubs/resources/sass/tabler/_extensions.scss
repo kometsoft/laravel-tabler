@@ -1,0 +1,6 @@
+.card-header-sticky {
+  position: sticky;
+  top: 0;
+  background: var(--tblr-card-bg, #ffffff);
+  z-index: 10;
+}
