@@ -44,6 +44,7 @@ class TablerServiceProvider extends ServiceProvider
 
         // Stubs
         $this->publishes([
+            __DIR__ . '/../stubs/app' => app(),
             __DIR__ . '/../stubs/resources/views' => resource_path('views'),
             __DIR__ . '/../stubs/lang' => lang_path(),
             __DIR__ . '/../stubs/stubs' => base_path('stubs'),
