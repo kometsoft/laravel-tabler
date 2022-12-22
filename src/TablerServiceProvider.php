@@ -29,6 +29,8 @@ class TablerServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
 
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'tabler');
+
         // Config file
         $this->publishes([
             __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
