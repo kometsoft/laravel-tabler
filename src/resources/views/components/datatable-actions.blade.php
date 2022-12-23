@@ -2,14 +2,14 @@
     @if(isset($route['show']))
     <li class="list-inline-item">
         <a href="{{ $route['show'] }}" class="link-primary text-decoration-none">
-            <i class="ti ti-eye"></i> @lang('View')
+            <i class="ti ti-eye"></i> @lang('tabler::action.view')
         </a>
     </li>
     @endif
     @if(isset($route['edit']))
     <li class="list-inline-item">
         <a href="{{ $route['edit'] }}" class="link-primary text-decoration-none">
-            <i class="ti ti-pencil"></i> @lang('Edit')
+            <i class="ti ti-pencil"></i> @lang('tabler::action.edit')
         </a>
     </li>
     @endif
@@ -17,7 +17,7 @@
     <li class="list-inline-item">
         <button type="button" onclick="deleteRow('{{ $id }}', '{{ $route['destroy'] }}')"
             class="link-primary text-decoration-none">
-            <i class="ti ti-trash"></i> @lang('Delete')
+            <i class="ti ti-trash"></i> @lang('tabler::action.delete')
         </button>
     </li>
     @endif

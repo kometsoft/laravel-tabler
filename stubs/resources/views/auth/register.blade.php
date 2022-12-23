@@ -31,7 +31,7 @@
                         <x-tabler::input type="password" name="password_confirmation" required></x-tabler::input>
                     </div>
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-primary w-100">@lang('Register')</button>
+                        <x-tabler::button type="submit" class="btn-primary w-100" :label="__('tabler::action.register')"></x-tabler::button>
                     </div>
                 </form>
             </div>

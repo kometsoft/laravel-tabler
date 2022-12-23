@@ -21,7 +21,7 @@
                     @lang('If you did not receive the email'),
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf
-                        <x-tabler::button type="submit" class="btn btn-link p-0 m-0 align-baseline" :label="__('click here to request another')">
+                        <x-tabler::button type="submit" class="btn btn-link p-0 m-0 align-baseline" :label="__('tabler::action.click_here_to_request_another')">
                     </form>
                 </div>
             </div>

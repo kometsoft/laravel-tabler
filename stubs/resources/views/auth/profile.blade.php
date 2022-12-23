@@ -12,7 +12,7 @@
                 <h3 class="card-title">@lang('Account Information')</h3>
                 <div class="card-actions">
                     <x-tabler::button type="submit" form="form-profile-account" class="btn btn-primary" icon="check"
-                        :label="__('Save')"></x-tabler::button>
+                        :label="__('tabler::action.save')"></x-tabler::button>
                 </div>
             </div>
             <div class="card-body">
@@ -54,7 +54,7 @@
                 <h3 class="card-title">@lang('Account Security')</h3>
                 <div class="card-actions">
                     <x-tabler::button type="submit" form="form-profile-password" class="btn btn-primary" icon="check"
-                        :label="__('Save')"></x-tabler::button>
+                        :label="__('tabler::action.save')"></x-tabler::button>
                 </div>
             </div>
             <div class="card-body">

@@ -29,7 +29,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Send password reset link')"></x-tabler::button>
+                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('tabler::action.send_password_reset_link')"></x-tabler::button>
                             </div>
                         </div>
                     </form>

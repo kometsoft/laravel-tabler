@@ -41,7 +41,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Reset Password')"></x-tabler::button>
+                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('tabler::action.reset_password')"></x-tabler::button>
                             </div>
                         </div>
                     </form>

@@ -36,7 +36,7 @@
                         </label>
                     </div>
                     <div class="form-footer">
-                        <button type="submit" class="btn btn-primary w-100">@lang('Login')</button>
+                        <x-tabler::button type="submit" class="btn-primary w-100" :label="__('tabler::action.log_in')"></x-tabler::button>
                     </div>
                 </form>
             </div>
