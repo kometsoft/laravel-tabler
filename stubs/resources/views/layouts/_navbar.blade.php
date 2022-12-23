@@ -9,7 +9,7 @@
                                 <i class="ti ti-home icon"></i>
                             </span>
                             <span class="nav-link-title">
-                                Foo
+                                @lang('Foo')
                             </span>
                         </a>
                     </li>
@@ -20,31 +20,31 @@
                                 <i class="ti ti-star icon"></i>
                             </span>
                             <span class="nav-link-title">
-                                Bar
+                                @lang('Bar')
                             </span>
                         </a>
                         <div class="dropdown-menu">
                             <div class="dropdown-menu-columns">
                                 <div class="dropdown-menu-column">
                                     <a class="dropdown-item" href="#">
-                                        Foo
+                                        @lang('Foo')
                                     </a>
                                     <a class="dropdown-item" href="#">
-                                        Baz
+                                        @lang('Baz')
                                     </a>
                                 </div>
                                 <div class="dropdown-menu-column">
                                     <div class="dropend">
                                         <a class="dropdown-item dropdown-toggle" href="#sidebar-cards"
                                             data-bs-toggle="dropdown" data-bs-auto-close="outside">
-                                            Bar
+                                            @lang('Bar')
                                         </a>
                                         <div class="dropdown-menu">
                                             <a href="#" class="dropdown-item">
-                                                Foo
+                                                @lang('Foo')
                                             </a>
                                             <a href="#" class="dropdown-item">
-                                                Bar
+                                                @lang('Bar')
                                             </a>
                                         </div>
                                     </div>

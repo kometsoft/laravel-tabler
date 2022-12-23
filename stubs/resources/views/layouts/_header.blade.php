@@ -99,18 +99,17 @@
             @guest
             @if(Route::has('login'))
             <div class="nav-item">
-                <a href="{{ route('login') }}" class="nav-link">@lang('Log In')</a>
+                <a href="{{ route('login') }}" class="nav-link">@lang('tabler::action.log_in')</a>
             </div>
             @endif
             @if(Route::has('register'))
             <div class="nav-item">
-                <a href="{{ route('register') }}" class="nav-link">@lang('Register')</a>
+                <a href="{{ route('register') }}" class="nav-link">@lang('tabler::action.register')</a>
             </div>
             @endif
             @else
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
-                    aria-label="Open user menu">
+                <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown">
                     <span class="avatar avatar-sm"
                         style="background-image: url('https://source.boringavatars.com/marble/120/{{ auth()->user()->id }}?square&colors=264653,2a9d8f,e9c46a,f4a261,e76f51')"></span>
                     <div class="d-none d-md-block ps-2">
@@ -119,11 +118,11 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <a href="#" class="dropdown-item">@lang('Profile')</a>
-                    <div class="dropdown-divider"></div>
+                    {{-- <a href="#" class="dropdown-item">@lang('tabler::action.profile')</a>
+                    <div class="dropdown-divider"></div> --}}
                     <a href="{{ route('logout') }}" class="dropdown-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        @lang('Log Out')
+                        @lang('tabler::action.log_out')
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf

@@ -9,7 +9,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                @lang('tabler::general.you_are_logged_in')
+                @lang('tabler::general.hi_you_are_logged_in', ['name' => auth()->user()->name])
             </div>
         </div>
     </div>

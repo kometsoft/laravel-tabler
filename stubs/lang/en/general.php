@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'you_are_logged_in' => 'You are logged in!',
+    'hi_you_are_logged_in' => 'Hi :name, you are logged in!',
 ];

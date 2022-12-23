@@ -7,6 +7,8 @@ return [
     'view' => 'View',
     'edit' => 'Edit',
     'delete' => 'Delete',
+    'profile' => 'Profile',
+    'log_out' => 'Log out',
     'reset_password' => 'Reset password',
     'forgot_password' => 'Forgot password?',
     'confirm_password' => 'Confirm password',
