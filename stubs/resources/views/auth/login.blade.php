@@ -10,7 +10,7 @@
         </div>
         <div class="card card-md">
             <div class="card-body">
-                <h2 class="card-title text-center mb-4">@lang('Log in')</h2>
+                <h2 class="card-title text-center mb-4">@lang('Log In')</h2>
                 <form method="POST" action="{{ route('login') }}" autocomplete="off">
                     @csrf
 
