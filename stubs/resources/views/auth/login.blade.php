@@ -23,7 +23,7 @@
                             @lang('Password')
                             <span class="form-label-description">
                                 @if(Route::has('password.request'))
-                                <a href="{{ route('password.request') }}">@lang('Forgot password?')</a>
+                                <a href="{{ route('password.request') }}" tabindex="-1">@lang('Forgot password?')</a>
                                 @endif
                             </span>
                         </label>
