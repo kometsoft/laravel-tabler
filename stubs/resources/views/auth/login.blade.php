@@ -23,7 +23,7 @@
                             @lang('Password')
                             <span class="form-label-description">
                                 @if(Route::has('password.request'))
-                                <a href="{{ route('password.request') }}">@lang('tabler::action.forgot_password')</a>
+                                <a href="{{ route('password.request') }}">@lang('Forgot password?')</a>
                                 @endif
                             </span>
                         </label>
@@ -36,7 +36,7 @@
                         </label>
                     </div>
                     <div class="form-footer">
-                        <x-tabler::button type="submit" class="btn-primary w-100" :label="__('tabler::action.log_in')"></x-tabler::button>
+                        <x-tabler::button type="submit" class="btn-primary w-100" :label="__('Log in')"></x-tabler::button>
                     </div>
                 </form>
             </div>

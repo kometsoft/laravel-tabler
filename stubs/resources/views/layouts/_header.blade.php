@@ -99,12 +99,12 @@
             @guest
             @if(Route::has('login'))
             <div class="nav-item">
-                <a href="{{ route('login') }}" class="nav-link">@lang('tabler::action.log_in')</a>
+                <a href="{{ route('login') }}" class="nav-link">@lang('Log in')</a>
             </div>
             @endif
             @if(Route::has('register'))
             <div class="nav-item">
-                <a href="{{ route('register') }}" class="nav-link">@lang('tabler::action.register')</a>
+                <a href="{{ route('register') }}" class="nav-link">@lang('Register')</a>
             </div>
             @endif
             @else
@@ -118,11 +118,11 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    {{-- <a href="#" class="dropdown-item">@lang('tabler::action.profile')</a>
+                    {{-- <a href="#" class="dropdown-item">@lang('Profile')</a>
                     <div class="dropdown-divider"></div> --}}
                     <a href="{{ route('logout') }}" class="dropdown-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        @lang('tabler::action.log_out')
+                        @lang('Log out')
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf

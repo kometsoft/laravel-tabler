@@ -32,7 +32,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <x-tabler::label class="col-md-4 col-form-label text-md-end" :label="__('Confirm Password')"></x-tabler::label>
+                            <x-tabler::label class="col-md-4 col-form-label text-md-end" :label="__('Confirm password')"></x-tabler::label>
 
                             <div class="col-md-6">
                                 <x-tabler::input type="password" name="password_confirmation" required></x-tabler::input>
@@ -41,7 +41,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('tabler::action.reset_password')"></x-tabler::button>
+                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Reset password')"></x-tabler::button>
                             </div>
                         </div>
                     </form>

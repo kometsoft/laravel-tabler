@@ -25,10 +25,10 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('tabler::action.confirm_password')"></x-tabler::button>
+                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Confirm password')"></x-tabler::button>
 
                                 @if(Route::has('password.request'))
-                                    <x-tabler::button :href="route('password.request')" class="btn btn-link" :label="__('tabler::action.forgot_password')"></x-tabler::button>
+                                    <x-tabler::button :href="route('password.request')" class="btn btn-link" :label="__('Forgot password?')"></x-tabler::button>
                                 @endif
                             </div>
                         </div>
