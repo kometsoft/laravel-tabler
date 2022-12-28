@@ -2,7 +2,6 @@
 
 ## Requirements 
 - php 8.0
-- laravel/ui 4.0
 
 ## Installations
 

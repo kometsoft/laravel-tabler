@@ -20,7 +20,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install the tabler resources.';
+    protected $description = 'Install the tabler assets.';
 
     /**
      * Execute the console command.
@@ -29,11 +29,7 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        $this->runCommands(['php artisan ui bootstrap --auth']);
-
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-config', '--force' => true]);
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-assets', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-stubs', '--force' => true]);
 
         $this->runCommands([
             'npm install @tabler/core laravel-datatables-vite nouislider litepicker tom-select alpinejs autosize imask',
