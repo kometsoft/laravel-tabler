@@ -18,7 +18,7 @@
 
 {{--
 
-<x-tabler::button type="submit" form="form" class="btn btn-primary" icon="check" :label="__('Save')"></x-tabler::button>
-<x-tabler::button href="#" class="btn btn-primary" icon="check" :label="__('Save')"></x-tabler::button>
+<x-tab::button type="submit" form="form" class="btn btn-primary" icon="check" :label="__('Save')"></x-tab::button>
+<x-tab::button href="#" class="btn btn-primary" icon="check" :label="__('Save')"></x-tab::button>
 
 --}}

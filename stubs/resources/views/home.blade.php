@@ -1,7 +1,7 @@
-@extends(config('tabler.layout.app'))
+@extends(config('laravel-tabler.layout.app'))
 
 @section('header')
-<x-tabler::page-header title="Dashboard"></x-tabler::page-header>
+<x-tab::page-header title="Dashboard"></x-tab::page-header>
 @endsection
 
 @section('content')

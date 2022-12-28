@@ -18,7 +18,7 @@
 
 <body>
     <!-- Toasts -->
-    <x-tabler::toast-group></x-tabler::toast-group>
+    <x-tab::toast-group></x-tab::toast-group>
 
     <!-- Header -->
     @include('layouts._header')

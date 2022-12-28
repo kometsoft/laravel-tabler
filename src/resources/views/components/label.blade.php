@@ -9,6 +9,6 @@
 
 {{--
 
-<x-tabler::label class="col-md-3 col-form-label" label="Name"></x-tabler::label>
+<x-tab::label class="col-md-3 col-form-label" label="Name"></x-tab::label>
 
 --}}

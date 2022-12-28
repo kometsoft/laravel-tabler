@@ -1,4 +1,4 @@
-{{-- <x-tabler::select name="roles" id="roles" :value="$user->email" :options="$roles"></x-tabler::select> --}}
+{{-- <x-tab::select name="roles" id="roles" :value="$user->email" :options="$roles"></x-tab::select> --}}
 
 @props(['name' => null, 'value' => null, 'disabled' => false, 'placeholder' => null, 'options' => [], 'optionValue' =>
 'id', 'optionLabel' => 'name'])

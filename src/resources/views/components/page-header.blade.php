@@ -8,7 +8,7 @@
         <div class="row g-2 align-items-center mw-100">
             <div class="col">
                 <div class="mb-1">
-                    <x-tabler::breadcrumb :show_home="$show_home" :links="$links"></x-tabler::breadcrumb>
+                    <x-tab::breadcrumb :show_home="$show_home" :links="$links"></x-tab::breadcrumb>
                 </div>
                 <h2 class="page-title">
                     <span class="text-truncate">@lang($title)</span>
@@ -24,8 +24,8 @@
 
 {{--
 
-<x-tabler::page-header :title='"$user->name"' :links="array_merge([
+<x-tab::page-header :title='"$user->name"' :links="array_merge([
     ['route' => route('user.index'), 'name' => __('Users')],
-])"></x-tabler::page-header>
+])"></x-tab::page-header>
 
 --}}

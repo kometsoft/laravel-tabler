@@ -14,8 +14,8 @@
 
 {{--
 
-<x-tabler::tab :links="[
+<x-tab::tab :links="[
     ['label' => 'User', 'active' => 'user.index', 'url' => route('user.index')],
-]"></x-tabler::tab>
+]"></x-tab::tab>
 
 --}}

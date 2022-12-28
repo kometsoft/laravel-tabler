@@ -14,6 +14,6 @@
 
 {{--
 
-<x-tabler::toast color="danger" title="Error!" :message="session('error')"></x-tabler::toast>
+<x-tab::toast color="danger" title="Error!" :message="session('error')"></x-tab::toast>
 
 --}}

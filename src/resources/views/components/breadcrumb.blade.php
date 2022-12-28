@@ -24,9 +24,9 @@
 
 {{-- 
 
-<x-tabler::breadcrumb :links="array_merge([
+<x-tab::breadcrumb :links="array_merge([
     ['route' => route('user.index'), 'name' => __('Users')],
     ($user->exists ? ['route' => route('user.show', $user), 'name' => $user->name] : []),
-])"></x-tabler::breadcrumb>
+])"></x-tab::breadcrumb>
 
 --}}

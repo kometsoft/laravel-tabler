@@ -1,4 +1,4 @@
-@extends(config('tabler.layout.guest'))
+@extends(config('laravel-tabler.layout.guest'))
 
 @section('content')
 <div class="container">
@@ -16,19 +16,19 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <x-tabler::label class="col-md-4 col-form-label text-md-end" :label="__('Password')"></x-tabler::label>
+                            <x-tab::label class="col-md-4 col-form-label text-md-end" :label="__('Password')"></x-tab::label>
 
                             <div class="col-md-6">
-                                <x-tabler::input type="password" name="password" required></x-tabler::input>
+                                <x-tab::input type="password" name="password" required></x-tab::input>
                             </div>
                         </div>
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Confirm password')"></x-tabler::button>
+                                <x-tab::button type="submit" class="btn btn-primary" :label="__('Confirm password')"></x-tab::button>
 
                                 @if(Route::has('password.request'))
-                                    <x-tabler::button :href="route('password.request')" class="btn btn-link" :label="__('Forgot password?')"></x-tabler::button>
+                                    <x-tab::button :href="route('password.request')" class="btn btn-link" :label="__('Forgot password?')"></x-tab::button>
                                 @endif
                             </div>
                         </div>

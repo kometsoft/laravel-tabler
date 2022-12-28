@@ -25,6 +25,6 @@ $classes = ($errors->has($name) ?? false)
 
 {{--
 
-<x-tabler::input name="name" :value="old('name', $user->name)" required></x-tabler::input>
+<x-tab::input name="name" :value="old('name', $user->name)" required></x-tab::input>
 
 --}}

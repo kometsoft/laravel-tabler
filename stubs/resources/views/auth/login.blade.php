@@ -1,11 +1,11 @@
-@extends(config('tabler.layout.guest'))
+@extends(config('laravel-tabler.layout.guest'))
 
 @section('content')
 <div class="page page-center">
     <div class="container container-tight py-4">
         <div class="text-center mb-4">
             <a href="/" class="navbar-brand navbar-brand-autodark">
-                <img src="{{ config('tabler.logo_path') }}" height="36" alt="">
+                <img src="{{ config('laravel-tabler.logo_path') }}" height="36" alt="">
             </a>
         </div>
         <div class="card card-md">
@@ -15,8 +15,8 @@
                     @csrf
 
                     <div class="mb-3">
-                        <x-tabler::label :label="__('Email address')"></x-tabler::label>
-                        <x-tabler::input type="email" name="email" :value="old('email')" required autofocus></x-tabler::input>
+                        <x-tab::label :label="__('Email address')"></x-tab::label>
+                        <x-tab::input type="email" name="email" :value="old('email')" required autofocus></x-tab::input>
                     </div>
                     <div class="mb-2">
                         <label class="form-label">
@@ -27,7 +27,7 @@
                                 @endif
                             </span>
                         </label>
-                        <x-tabler::input type="password" name="password" required></x-tabler::input>
+                        <x-tab::input type="password" name="password" required></x-tab::input>
                     </div>
                     <div class="mb-2">
                         <label class="form-check">
@@ -36,7 +36,7 @@
                         </label>
                     </div>
                     <div class="form-footer">
-                        <x-tabler::button type="submit" class="btn-primary w-100" :label="__('Log in')"></x-tabler::button>
+                        <x-tab::button type="submit" class="btn-primary w-100" :label="__('Log in')"></x-tab::button>
                     </div>
                 </form>
             </div>

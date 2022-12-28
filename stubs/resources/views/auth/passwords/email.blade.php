@@ -1,4 +1,4 @@
-@extends(config('tabler.layout.guest'))
+@extends(config('laravel-tabler.layout.guest'))
 
 @section('content')
 <div class="container">
@@ -20,16 +20,16 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <x-tabler::label class="col-md-4 col-form-label text-md-end" :label="__('Email address')"></x-tabler::label>
+                            <x-tab::label class="col-md-4 col-form-label text-md-end" :label="__('Email address')"></x-tab::label>
 
                             <div class="col-md-6">
-                                <x-tabler::input type="email" name="email" :value="old('email')" required autocomplete="email" autofocus></x-tabler::input>
+                                <x-tab::input type="email" name="email" :value="old('email')" required autocomplete="email" autofocus></x-tab::input>
                             </div>
                         </div>
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <x-tabler::button type="submit" class="btn btn-primary" :label="__('Send password reset link')"></x-tabler::button>
+                                <x-tab::button type="submit" class="btn btn-primary" :label="__('Send password reset link')"></x-tab::button>
                             </div>
                         </div>
                     </form>

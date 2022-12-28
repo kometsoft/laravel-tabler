@@ -19,7 +19,7 @@
 
 <body>
 	{{-- Toasts --}}
-	<x-tabler::toast-group></x-tabler::toast-group>
+	<x-tab::toast-group></x-tab::toast-group>
     
     <div class="page">
         {{-- Header --}}

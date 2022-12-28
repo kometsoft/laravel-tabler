@@ -1,4 +1,4 @@
-@extends(config('tabler.layout.guest'))
+@extends(config('laravel-tabler.layout.guest'))
 
 @section('content')
 <div class="container">
@@ -21,7 +21,7 @@
                     @lang('If you did not receive the email'),
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf
-                        <x-tabler::button type="submit" class="btn btn-link p-0 m-0 align-baseline" :label="__('click here to request another')">
+                        <x-tab::button type="submit" class="btn btn-link p-0 m-0 align-baseline" :label="__('click here to request another')">
                     </form>
                 </div>
             </div>

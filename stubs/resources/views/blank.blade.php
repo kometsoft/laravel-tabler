@@ -1,11 +1,11 @@
-@extends(config('tabler.layout.app'))
+@extends(config('laravel-tabler.layout.app'))
 
 @section('header')
-<x-tabler::page-header title="Untitled">
+<x-tab::page-header title="Untitled">
     <div class="btn-list">
-        <x-tabler::button href="#" class="btn btn-primary" icon="plus" :label="__('New')"></x-tabler::button>
+        <x-tab::button href="#" class="btn btn-primary" icon="plus" :label="__('New')"></x-tab::button>
     </div>
-</x-tabler::page-header>
+</x-tab::page-header>
 @endsection
 
 @section('content')

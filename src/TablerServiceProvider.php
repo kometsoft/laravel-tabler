@@ -15,8 +15,8 @@ class TablerServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/config/tabler.php',
-            'tabler'
+            __DIR__ . '/config/laravel-tabler.php',
+            'laravel-tabler'
         );
     }
 
@@ -27,13 +27,13 @@ class TablerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tabler');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'tab');
 
         // $this->loadTranslationsFrom(__DIR__ . '/lang', 'tabler');
 
         // Config file
         $this->publishes([
-            __DIR__ . '/config/tabler.php' => config_path('tabler.php'),
+            __DIR__ . '/config/laravel-tabler.php' => config_path('laravel-tabler.php'),
         ], 'laravel-tabler-config');
 
         // Assets
