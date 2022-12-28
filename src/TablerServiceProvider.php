@@ -29,7 +29,7 @@ class TablerServiceProvider extends ServiceProvider
             __DIR__ . '/../stubs/resources/js' => resource_path('js'),
             __DIR__ . '/../stubs/vite.config.js' => base_path('vite.config.js'),
             __DIR__ . '/../stubs/public/vendor' => public_path('vendor'),
-        ]);
+        ], 'laravel-tabler');
 
         if ($this->app->runningInConsole()) {
             $this->commands([

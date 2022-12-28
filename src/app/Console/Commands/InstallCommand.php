@@ -29,7 +29,7 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-assets', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler', '--force' => true]);
 
         $this->runCommands([
             'npm install @tabler/core laravel-datatables-vite nouislider litepicker tom-select alpinejs autosize imask',
